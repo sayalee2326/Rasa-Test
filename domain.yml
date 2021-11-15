@@ -1,0 +1,151 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- food_order:
+    use_entities: true
+- veg_order:
+    use_entities: true
+- non_veg_order:
+    use_entities: true
+- Paneer:
+    use_entities: true
+- mix_veg:
+    use_entities: true
+- dal:
+    use_entities: true
+- chicken:
+    use_entities: true
+- mutton:
+    use_entities: true
+- prawns:
+    use_entities: true
+- anythingelse:
+    use_entities: true
+- yes_to_order:
+    use_entities: true
+- no_to_order:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: |-
+      Hey! i am Food Ordering Bot 
+       How are you?
+  utter_cheer_up:
+  - image: https://i.pinimg.com/originals/14/06/1b/14061be84f18bda54e29b6f036157c4b.jpg
+    text: 'here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_food_order:
+  - buttons:
+    - payload: /veg_order
+      title: veg
+    - payload: /non_veg_order
+      title: Non-Veg
+    text: 'What would you prefer:'
+  utter_veg_order:
+  - buttons:
+    - payload: /Paneer
+      title: Paneer
+    - payload: /mix_veg
+      title: Mix-Veg
+    - payload: /dal
+      title: Dal
+    image: https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Neha_Mathur/Achari_Paneer_Tikka_Recipe_Party_Food.JPG
+    text: Eat GOOD, Feel Good!!!
+  utter_Paneer:
+  - text: |-
+      We have 
+       Paneer Tikka 
+       Paneer Butter Masala 
+       Palak Paneer 
+       what you want to order?
+  utter_mix_veg:
+  - text: |-
+      We have 
+       Veg Kadai 
+       matar mushroom 
+       vegetable kurma 
+       what you want to order?
+  utter_dal:
+  - text: |-
+      we have 
+       Dal Tadka 
+        Dal Fry 
+       Dal Khichadi 
+       what you want to order?
+  utter_non_veg_order:
+  - buttons:
+    - payload: /chicken
+      title: Chicken
+    - payload: /mutton
+      title: Mutton
+    - payload: /prawns
+      title: Prawns
+    image: https://images.themodernproper.com/billowy-turkey/production/posts/2020/Creamy-Tomato-Chicken-Skillet-11.jpg?w=1200&h=1200&q=82&fm=jpg&fit=crop&fp-x=0.5&fp-y=0.5&dm=1599768537&s=dad6c7ab7cb4f30fd51949ab8859b070
+    text: People who love to eat are always the BEST People!!
+  utter_chicken:
+  - text: |-
+      We have 
+       Chicken Tandoori 
+       Chicken Dum Biryani 
+       Butter Chicken 
+       what you want to order?
+  utter_mutton:
+  - text: |-
+      We have 
+       Mutton Masala 
+       Mutton Dum Biryani 
+       Mutton Maharaja 
+       what you want to order?
+  utter_prawns:
+  - text: |-
+      We have 
+       Prawns Butter Garlic 
+       Prawns Red Curry 
+       Prawns Khao Suey 
+       what you want to order?
+  utter_anythingelse:
+  - buttons:
+    - payload: /yes_to_order
+      title: YES
+    - payload: /no_to_order
+      title: NO
+    text: Thanks, Is their anything else to order ?
+  utter_yes_to_order:
+  - buttons:
+    - payload: /veg_order
+      title: veg
+    - payload: /non_veg_order
+      title: Non-Veg
+    text: 'What would you prefer:'
+  utter_no_to_order:
+  - text: Thanks, we are preparing your order shortly.
+actions: []
+forms: {}
+e2e_actions: []
