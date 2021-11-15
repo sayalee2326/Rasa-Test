@@ -1,0 +1,64 @@
+version: "2.0"
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule: food orderign rule
+  steps:
+  - intent: food_order
+  - action: utter_food_order
+- rule: veg order rule
+  steps:
+  - intent: veg_order
+  - action: utter_veg_order
+- rule: Paneer order rule
+  steps:
+  - intent: Paneer
+  - action: utter_Paneer
+- rule: mix veg order rule
+  steps:
+  - intent: mix_veg
+  - action: utter_mix_veg
+- rule: dal order rule
+  steps:
+  - intent: dal
+  - action: utter_dal
+
+
+- rule: nonveg order rule
+  steps:
+  - intent: non_veg_order
+  - action: utter_non_veg_order
+- rule: chicken order rule
+  steps:
+  - intent: chicken
+  - action: utter_chicken
+- rule: mutton order rule
+  steps:
+  - intent: mutton
+  - action: utter_mutton
+- rule: prawns order rule
+  steps:
+  - intent: prawns
+  - action: utter_prawns
+
+- rule: anythingelse
+  steps:
+  - intent: anythingelse
+  - action: utter_anythingelse
+
+- rule: yes to order rule
+  steps:
+  - intent: yes_to_order
+  - action: utter_yes_to_order
+
+- rule: no to  order rule
+  steps:
+  - intent: no_to_order
+  - action: utter_no_to_order    
+    

@@ -1,0 +1,245 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hii
+    - heyAa
+    - Hello
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - 8zLDh3WribtF
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - i am sad
+    - i m sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - what about you?
+    - are you bot?
+    - are you bot
+- intent: food_order
+  examples: |
+    - I want order something
+    - I am hungry
+    - order something
+    - i want to order something
+    - i m hungry
+    - i wan to order something
+    - i am hungry
+    - hungry
+    - do you have pizza?
+    - food order
+    - Can I ordered something
+    - order
+    - i want to order
+    - eatable
+    - ediable
+- intent: veg_order
+  examples: |
+    - Veg
+    - veggie
+    - veg
+    - vegeterian
+    - veg_order
+    - order veg
+- intent: Paneer
+  examples: |
+    - i want Paneer
+    - can i order Paneer
+    - Paneer
+    - i want to order Paneer
+- intent: mix_veg
+  examples: |
+    - i want mix_veg
+    - mix veg
+    - mix-veg
+    - Mix-veg
+    - can i order mix_veg
+    - mix_veg
+    - i want to order mix_veg
+- intent: non_veg_order
+  examples: |
+    - non veg
+    - non-veg
+    - non_veg
+    - Non-veg
+- intent: chicken
+  examples: |
+    - chicken
+    - Chicken
+    - chick
+- intent: mutton
+  examples: |
+    - Mutton
+    - mutton
+    - meat
+    - Meat
+- intent: prawns
+  examples: |
+    - Prawns
+    - prawns
+    - prawn
+    - Prawn
+- intent: anythingelse
+  examples: |
+    - Paneer Tikka
+    - i want to order Paneer Tikka
+    - please order 2 paneer tikka
+    - i want to order 1 Paneer Tikka
+    - 1 panner tikka
+    - Paneer Butter Masala
+    - i want to order Paneer Butter Masala
+    - please order 2 Paneer Butter Masala
+    - i want to order 1 Paneer Butter Masala
+    - 1 Paneer Butter Masala
+    - Palak Paneer
+    - i want to order Palak Paneer
+    - please order 2 Palak Paneer
+    - i want to order 1 Palak Paneer
+    - 1 Palak Paneer
+    - Veg Kadai
+    - i want to order Veg Kadai
+    - please order 2 Veg Kadai
+    - i want to order 1 Veg Kadai
+    - 1 Veg Kadai
+    - matar mushroom
+    - i want to order matar mushroom
+    - please order 2 matar mushroom
+    - i want to order 1 matar mushroom
+    - 1 matar mushroom
+    - vegetable kurma
+    - i want to order vegetable kurma
+    - please order 2 vegetable kurma
+    - i want to order 1 vegetable kurma
+    - 1 vegetable kurma
+    - Dal Tadka
+    - i want to order Dal Tadka
+    - please order 2 Dal Tadka
+    - i want to order 1 Dal Tadka
+    - 1 Dal Tadka
+    - Dal Fry
+    - i want to order Dal Fry
+    - please order 2 Dal Fry
+    - i want to order 1 Dal Fry
+    - 1 Dal Fry
+    - Dal Khichadi
+    - i want to order Dal Khichadi
+    - please order 2 Dal Khichadi
+    - i want to order 1 Dal Khichadi
+    - 1 Dal Khichadi
+    - Chicken Tandoori
+    - i want to order Chicken Tandoori
+    - please order 2 Chicken Tandoori
+    - i want to order 1 Chicken Tandoori
+    - 1 Chicken Tandoori
+    - Chicken Dum Biryani
+    - i want to order Chicken Dum Biryani
+    - please order 2 Chicken Dum Biryani
+    - i want to order 1 Chicken Dum Biryani
+    - 1 Chicken Dum Biryani
+    - Butter Chicken
+    - i want to order Butter Chicken
+    - please order 2 Butter Chicken
+    - i want to order 1 Butter Chicken
+    - 1 Butter Chicken
+    - Mutton Masala
+    - i want to order Mutton Masala
+    - please order 2 Mutton Masala
+    - i want to order 1 Mutton Masala
+    - 1 Mutton Masala
+    - Mutton Dum Biryani
+    - i want to order Mutton Dum Biryani
+    - please order 2 Mutton Dum Biryani
+    - i want to order 1 Mutton Dum Biryani
+    - 1 Mutton Dum Biryani
+    - Mutton Maharaja
+    - i want to order Mutton Maharaja
+    - please order 2 Mutton Maharaja
+    - i want to order 1 Mutton Maharaja
+    - 1 Mutton Maharaja
+    - Prawns Butter Garlic
+    - i want to order Prawns Butter Garlic
+    - please order 2 Prawns Butter Garlic
+    - i want to order 1 Prawns Butter Garlic
+    - 1 Prawns Butter Garlic
+    - Prawns Red Curry
+    - i want to order Prawns Red Curry
+    - please order 2 Prawns Red Curry
+    - i want to order 1 Prawns Red Curry
+    - 1 Prawns Red Curry
+    - Prawns Khao Suey
+    - i want to order Prawns Khao Suey
+    - please order 2 Prawns Khao Suey
+    - i want to order 1 Prawns Khao Suey
+    - 1 Prawns Khao Suey
+- intent: yes_to_order
+  examples: |
+    - yes i want to order more
+- intent: no_to_order
+  examples: |
+    - no, i am done with order
+    - no
+- synonym: order food
+  examples: |
+    - food
+    - order something
+    - eatables
+    - eatable
